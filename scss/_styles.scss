@@ -1,0 +1,738 @@
+@include mymixin;
+.main {
+  background-image: url("../imgs/q_70.jpg");
+  background-position: center;
+  width: 100%;
+  background-size: cover;
+  background-color: black;
+  height: 600px;
+  background-repeat: no-repeat;
+  padding: 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .first {
+    transform: rotate(180deg);
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    h1 {
+      width: 684px;
+      color: #fff;
+
+      text-align: center;
+      font-family: judson;
+      font-size: 70px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    button {
+      cursor: pointer;
+      width: 127px;
+      font-size: large;
+      height: 48px;
+      border: none;
+      color: #fff;
+      border-radius: 8px;
+      background: rgb(99, 112, 81);
+      &:hover {
+        background-color: rgb(77, 87, 65);
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    height: 268px;
+    .info {
+      h1 {
+        font-size: 20px;
+        width: 241px;
+      }
+      button {
+        width: 89px;
+        height: 22.898px;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    img {
+      display: none;
+    }
+  }
+}
+.product {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+  justify-content: space-around;
+  padding-bottom: 100px;
+
+  .name {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    .line2 {
+      width: 253px;
+
+      height: 1px;
+      background-color: black;
+      @media (max-width: 840px) {
+        display: none;
+      }
+    }
+    h1 {
+      color: #000;
+      font-family: "Kaisei Decol";
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  .goods {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 47px;
+    padding-bottom: 30px;
+    .child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 40px;
+      h1 {
+        color: #000;
+
+        font-family: JejuMyeongjo;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      img {
+        width: 240px;
+        height: 240px;
+        &:hover{
+          background-color: rgba(173, 173, 173, 0.295);
+          border-radius: 15px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  button {
+    cursor: pointer;
+    color: #fff;
+    width: 235px;
+    height: 60px;
+    border-radius: 5px;
+    background: rgb(13, 59, 94);
+    font-family: JejuMyeongjo;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    &:hover {
+      background-color: rgb(11, 37, 56);
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .product {
+    margin-top: 42px;
+    row-gap: 40px;
+    .name {
+      h1 {
+        font-size: 32px;
+      }
+    }
+    .goods {
+      .child {
+        img {
+          width: 199px;
+          height: 199px;
+        }
+        h1 {
+          font-size: 22px;
+        }
+      }
+    }
+    button {
+      width: 98px;
+      height: 28px;
+      color: #fff;
+
+      font-family: JejuMyeongjo;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.lastsection {
+  background-image: url("../imgs/Campfire-on-Steens-Mountain-hero-John-Waller.webp");
+  width: 100%;
+  height: 615px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    h1 {
+      color: #fff;
+      width: 405px;
+      text-align: center;
+      font-family: Judson;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    button {
+      cursor: pointer;
+      width: 241.446px;
+      height: 60px;
+      flex-shrink: 0;
+      border-radius: 5px;
+      background: rgb(13, 59, 94);
+      color: #fff;
+
+      font-family: Jomolhari;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      border: none;
+      &:hover {
+        background-color: rgb(11, 37, 56);
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .lastsection {
+    display: flex;
+    justify-content: center;
+    height: 268px;
+    div {
+      h1 {
+        color: #fff;
+        text-align: center;
+        font-family: Judson;
+        width: 169px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      button {
+        width: 89px;
+        height: 21px;
+        color: #fff;
+
+        font-family: Jomolhari;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+.pseudofooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #273a47;
+  height: 333px;
+
+  flex-direction: column;
+  width: 100%;
+  h1 {
+    width: 1140px;
+    height: 45px;
+    flex-shrink: 0;
+    color: #fff;
+    text-align: center;
+    font-family: Karma;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 390px) {
+  .pseudofooter {
+    height: 137px;
+    h1 {
+      color: #fff;
+      max-width: 331px;
+      text-align: center;
+      font-family: Karma;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+@include myfooter;
+
+
+// Page end
+
+
+@include mymixin;
+.container2{
+    .main{
+        background-image: url("../imgs/mountain_landscape_nature_16-wallpaper-1600x600.jpg");
+        display: flex;
+        justify-content: center;
+        background-position: center bottom;
+        align-items: center;
+        font-size: 75px;
+    }
+    .product{
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 113px;
+        justify-content: space-around;
+        padding-bottom: 100px;
+        .mother{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            flex-wrap: wrap;
+            .child1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 32px;
+                .circle{
+                    width: 192px;
+                    height: 192px;
+                    border-radius: 50%;
+                    background-color: #273A47;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h1{
+                        color: #FFF;
+                        font-family: "Kaisei Decol";
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+                h1{
+                    color: #000;
+                    text-align: center;
+                    font-family: "Kaisei Decol";
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    max-width: 381px;
+                }
+            }
+        }
+    }
+    .aboutus{
+        width: 100%;
+        height: 600px;
+        background-image: url("../imgs/DSC3506-ouix45ke0nh802lt4g7wr83m7zzrou4qyaqeg7ctio.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        .leftside{
+            width: 50%;
+            background: rgba(0, 0, 0, 0.50);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            h1{
+                color: #FFF;
+                text-align: center;
+                font-family: Kadwa;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            h2{
+                color: #FFF;
+                font-family: Kadwa;
+                font-size: 20px;
+                font-style: normal;
+                text-align: center;
+                font-weight: 400;
+                line-height: normal;
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 390px){
+    .container2{
+        .main{
+            .info{
+                h1{
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Judson;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+        }
+        .product{
+            padding-bottom: 42px;
+            margin-top: 42px;
+            row-gap: 60px;
+            .name{
+                h1{
+                    color: #000;
+                    font-family: "Kaisei Decol";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+            .mother{
+                row-gap: 20px;
+                .child1{
+                    border: solid 1px rgba(0, 0, 0, 0.20);
+                    border-radius: 10px;
+                    padding: 10px 0;
+                    .circle{
+                        width: 120px;
+                        height: 120px;
+                        h1{
+                            color: #FFF;
+                            font-family: "Kaisei Decol";
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                    h1{
+                        color: #000;
+                        width: 325px;
+                        text-align: center;
+                        font-family: "Kaisei Decol";
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+        .aboutus{
+            position: relative;
+            height: 297px;
+            .leftside{
+                h1{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Kadwa;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                h2{
+                  display: none
+                }
+            }
+        }
+    }
+}
+
+@include myfooter;
+
+
+// page end;
+
+@include mymixin;
+
+.container3{
+  .main{
+    background-image: url("../imgs/mountaintop.jpg");
+    display:  flex;
+    justify-content: center;
+    background-position: center;
+    align-items: center;
+    h1{
+      width: 684px;
+      color: #fff;
+      text-shadow: 4px 4px rgba(0, 0, 0, 0.20);
+      text-align: center;
+      font-family: judson;
+      font-size: 70px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      
+      @media (max-width:390px) {
+        font-size: 40px;
+      }
+    }
+  }
+  .abtproduct{
+    padding: 0 82px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    @media (max-width:390px) {
+      margin-top: 42px;
+      padding: 0 10px;
+      margin-bottom: 25px;
+    }
+    .parent{
+      display: flex;
+      justify-content: space-around;
+      @media (max-width:390px) {
+        justify-content: space-between;
+      }
+      .imgdiv{
+        @media (max-width:390px) {
+          margin-top: 90px;
+        }
+        
+        img{
+          border-radius: 5px;
+          @media (max-width:390px) {
+            width: 169px;
+            align-self: flex-start;
+            height: 169px;
+          }
+        }
+      }
+      .rightsideinfo{
+        width: 582px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 17px;
+        @media (max-width:390px) {
+          width: 140px;
+          row-gap: 7px;
+        }
+        h1{
+          color: #000;
+          font-family: Kaushan Script;
+          font-size: 64px;
+          font-style: normal;
+          font-weight:100;
+          line-height: normal;
+          @media (max-width:390px) {
+            color: #000;
+
+            font-family: Metal;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        h2{
+          color: #000;
+          font-family: JejuMyeongjo;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;        
+          @media (max-width:390px) {
+            color: #000;
+            font-family: JejuMyeongjo;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            
+          }  
+        }
+        h3{
+          color: #000;
+          font-family: Kameron;
+          font-size: 25px;
+          
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          @media (max-width:390px) {
+            color: #000;
+            
+            font-family: Kameron;
+            font-size: 13px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        h4{
+          color: #000;
+
+          font-family: JejuMyeongjo;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          @media (max-width:390px) {
+            color: #000;
+
+            font-family: JejuMyeongjo;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        h5{
+          color: #000;
+
+          font-family: JejuMyeongjo;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          @media (max-width:390px) {
+            color: #000;
+
+            font-family: JejuMyeongjo;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        .input{
+          input{
+            width: 100px;
+            height: 60px;
+            padding: 0 30px;
+            border: 1px solid black;
+            border-radius: 6px;
+            font-size: 30px;
+            @media (max-width:390px) {
+              width: 54px;
+              height: 30px;
+              font-size: 16px;
+            }
+          }
+        }
+        .child3{
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+          @media (max-width:390px) {
+            display: none;
+          }
+          button{
+            border-radius: 20px;
+            background: rgb(13, 59, 94);
+            width: 426.617px;
+            height: 76px;
+            flex-shrink: 0; 
+            color: #FFF;
+            cursor: pointer;
+            font-family: Jomolhari;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            &:hover {
+              background-color: rgb(11, 37, 56);
+            }
+          }
+          svg{
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+            @media (max-width:390px) {
+            
+            }
+          }
+        }
+      }
+    }
+  }
+  .buy{
+    display: none;
+    @media (max-width:390px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 42px;
+    }
+    button{
+      width: 80%;
+      border-radius: 20px;
+      background: rgb(13, 59, 94);
+      height: 30px;
+      color: #FFF;
+      &:hover {
+        background-color: rgb(11, 37, 56);
+      }
+      cursor: pointer;
+      font-family: Jomolhari;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    svg{
+      cursor: pointer;
+      width: 30px;
+      height: 30px
+    }
+  }
+}
+
+@include myfooter;
+
+// end
